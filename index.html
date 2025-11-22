@@ -86,6 +86,13 @@
       color:#c1ccec;
       font-size:13px
     }
+    .badge-dot{
+      width:8px;
+      height:8px;
+      border-radius:999px;
+      background:radial-gradient(circle,#4ade80 0,#16a34a 55%,#052e16 100%);
+      box-shadow:0 0 0 6px rgba(34,197,94,.25);
+    }
     .lang{
       gap:10px;
       display:flex;
@@ -97,7 +104,8 @@
       border:1px solid #1d2946;
       padding:7px 12px;
       border-radius:999px;
-      cursor:pointer
+      cursor:pointer;
+      font-size:13px;
     }
     .lang button[aria-pressed="true"]{
       background:var(--accent);
@@ -181,7 +189,10 @@
 <body>
   <div class="wrap">
     <div class="topbar">
-      <div class="badge">Actif numérique disponible à l’acquisition</div>
+      <div class="badge">
+        <span class="badge-dot"></span>
+        <span>Actif numérique disponible à l’acquisition</span>
+      </div>
       <div class="lang">
         <button id="btn-fr" aria-pressed="true">FR</button>
         <button id="btn-en" aria-pressed="false">EN</button>
@@ -199,9 +210,9 @@
         montée des eaux, submersions et tempêtes, <b>pression sur ports, terminaux,
         routes maritimes et infrastructures côtières</b>, acidification, effondrement
         halieutique et risques industriels littoraux.<br>
-        Conçu comme <b>bannière neutre</b> pour cadres « océans & solvency »,
+        Conçu comme <b>bannière neutre</b> pour cadres « océans &amp; solvency »,
         stress-tests côtiers, indices de résilience portuaire, observatoires littoraux
-        et programmes « ocean & solvency » pour banques, assureurs, ports,
+        et programmes « ocean &amp; solvency » pour banques, assureurs, ports,
         fonds infrastructure et acteurs publics.<br>
         Ce nom permet de sécuriser un <b>monopole sémantique crédible</b> sur le terme
         « Ocean Solvency » à l’échelle internationale.<br>
@@ -238,7 +249,7 @@
         <div class="col-6">
           <h3>Pourquoi OceanSolvency.com a de la valeur</h3>
           <div class="list">
-            <div class="chip">Cadre « océans & solvabilité » lisible pour comités des risques et boards</div>
+            <div class="chip">Cadre « océans &amp; solvabilité » lisible pour comités des risques et boards</div>
             <div class="chip">Nom de catégorie neutre pour stress-tests océaniques et côtiers (ports, zones industrielles, supply chain maritime)</div>
             <div class="chip">Narratif durable au-dessus des données océan/climat, modèles de risque et partenaires</div>
             <div class="chip">.com global exact-match — actif défensif si le concept « ocean solvency » se généralise</div>
@@ -249,9 +260,9 @@
           <h3>Exemples de cas d’usage</h3>
           <div class="list">
             <div class="chip">Programme groupe « Ocean Solvency Framework » (banque / assureur / réassureur)</div>
-            <div class="chip">Plateforme de données côtières & scénarios océaniques (ports, infrastructures, littoraux)</div>
-            <div class="chip">Observatoire « ocean & solvency » pour zones côtières, ports ou filières maritimes</div>
-            <div class="chip">Narratif risques physiques océaniques pour plans CAPEX, financement & résilience</div>
+            <div class="chip">Plateforme de données côtières &amp; scénarios océaniques (ports, infrastructures, littoraux)</div>
+            <div class="chip">Observatoire « ocean &amp; solvency » pour zones côtières, ports ou filières maritimes</div>
+            <div class="chip">Narratif risques physiques océaniques pour plans CAPEX, financement &amp; résilience</div>
           </div>
         </div>
       </div>
@@ -282,7 +293,7 @@
     <section class="card" style="margin-top:16px" data-fr>
       <h3>Documents / Briefs</h3>
       <p class="muted">
-        Brief d’acquisition détaillé OceanSolvency.com (2025-11) disponible en français et en anglais pour les équipes Audit, Risques, Finance, ESG & Juridique.
+        Brief d’acquisition détaillé OceanSolvency.com (2025-11) disponible en français et en anglais pour les équipes Audit, Risques, Finance, ESG &amp; Juridique.
       </p>
       <div class="cta">
         <a class="btn" href="/Acquisition%20Brief%20Oceansolvency-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
@@ -311,12 +322,12 @@
         sea-level rise and coastal flooding, storm surge and erosion, <b>pressure on ports, terminals and
         coastal infrastructure</b>, ocean warming and acidification, fisheries decline, maritime disruption
         and coastal industrial risks.<br>
-        Designed as a <b>neutral banner</b> for ocean & solvency frameworks, coastal/ocean stress tests,
+        Designed as a <b>neutral banner</b> for ocean &amp; solvency frameworks, coastal/ocean stress tests,
         indices and dashboards, coastal observatories and group-wide “ocean solvency” programmes
         for banks, insurers, ports, infrastructure funds and public actors.<br>
         It offers a credible <b>semantic monopoly</b> on the wording “Ocean Solvency”
         at global level.<br>
-        <b>Serious offers only (financial institutions, shipping & port groups, infrastructure funds, international coalitions).</b>
+        <b>Serious offers only (financial institutions, shipping &amp; port groups, infrastructure funds, international coalitions).</b>
       </p>
       <div class="cta">
         <a class="btn primary" href="mailto:contact@oceansolvency.com?subject=OceanSolvency.com%20-%20NDA%20%2F%20Offer&body=Hello%2C%0D%0A%0D%0AI%27d%20like%20to%20request%20your%20NDA%20and%2For%20submit%20an%20offer%20for%20OceanSolvency.com.%0D%0ACompany%3A%20%0D%0AName%20%2F%20Role%3A%20%0D%0AIntended%20use%3A%20%0D%0ABudget%20range%3A%20%0D%0ABest%2C">
@@ -347,9 +358,9 @@
         <div class="col-6">
           <h3>Why OceanSolvency.com is valuable</h3>
           <div class="list">
-            <div class="chip">“Ocean & solvency” framework readable at board / risk committee level</div>
+            <div class="chip">“Ocean &amp; solvency” framework readable at board / risk committee level</div>
             <div class="chip">Neutral category name for ocean/coastal stress-testing (ports, coastal real estate, maritime supply chains)</div>
-            <div class="chip">Long-lived narrative above ocean & climate data, risk models and partners</div>
+            <div class="chip">Long-lived narrative above ocean &amp; climate data, risk models and partners</div>
             <div class="chip">Exact-match global .com — defensive asset if the “ocean solvency” concept spreads</div>
             <div class="chip">Credible semantic monopoly on the wording “Ocean Solvency”</div>
           </div>
@@ -358,8 +369,8 @@
           <h3>Example use cases</h3>
           <div class="list">
             <div class="chip">Group-wide “Ocean Solvency Framework” for banks / insurers / reinsurers</div>
-            <div class="chip">Coastal and ocean data & scenario platform (hazards, exposure, solvency metrics)</div>
-            <div class="chip">Ocean & solvency observatory for ports, coastal regions or maritime sectors</div>
+            <div class="chip">Coastal and ocean data &amp; scenario platform (hazards, exposure, solvency metrics)</div>
+            <div class="chip">Ocean &amp; solvency observatory for ports, coastal regions or maritime sectors</div>
             <div class="chip">Physical ocean risk narrative for CAPEX, financing and resilience plans</div>
           </div>
         </div>
@@ -391,7 +402,7 @@
     <section class="card" style="margin-top:16px" data-en hidden>
       <h3>Documents / Briefs</h3>
       <p class="muted">
-        Detailed OceanSolvency.com acquisition brief (2025-11) available in English and French for Audit, Risk, Finance, ESG & Legal teams.
+        Detailed OceanSolvency.com acquisition brief (2025-11) available in English and French for Audit, Risk, Finance, ESG &amp; Legal teams.
       </p>
       <div class="cta">
         <a class="btn" href="/Acquisition%20Brief%20Oceansolvency-EN-202511.pdf" target="_blank" rel="noopener" type="application/pdf">
@@ -410,7 +421,7 @@
     </section>
 
     <p class="foot muted">
-      © OceanSolvency.com — actif numérique descriptif « ocean & solvency ». Aucune affiliation avec des agences de notation,
+      © OceanSolvency.com — actif numérique descriptif « ocean &amp; solvency ». Aucune affiliation avec des agences de notation,
       régulateurs ou organisations publiques. Usage descriptif uniquement. Pas de conseil juridique, financier ou réglementaire.
       — Contact : <a href="mailto:contact@oceansolvency.com">contact@oceansolvency.com</a>
     </p>
@@ -419,16 +430,28 @@
   <script>
     const frBtn = document.getElementById('btn-fr');
     const enBtn = document.getElementById('btn-en');
+
     const show = (lang) => {
-      document.querySelectorAll('[data-fr]').forEach(n => n.hidden = (lang !== 'fr'));
-      document.querySelectorAll('[data-en]').forEach(n => n.hidden = (lang !== 'en'));
+      document.querySelectorAll('[data-fr]').forEach(n => {
+        n.hidden = (lang !== 'fr');
+      });
+      document.querySelectorAll('[data-en]').forEach(n => {
+        n.hidden = (lang !== 'en');
+      });
       frBtn.setAttribute('aria-pressed', String(lang === 'fr'));
       enBtn.setAttribute('aria-pressed', String(lang === 'en'));
       document.documentElement.lang = lang;
     };
+
     frBtn.addEventListener('click', () => show('fr'));
     enBtn.addEventListener('click', () => show('en'));
-    show('fr');
+
+    // Langue par défaut selon le navigateur : FR si navigateur en français, sinon EN
+    (function initLang() {
+      const navLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      const defaultLang = navLang.startsWith('fr') ? 'fr' : 'en';
+      show(defaultLang);
+    })();
   </script>
 </body>
 </html>
